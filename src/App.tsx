@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Dock from "components/Dock"
+import ActionCenter from "components/ActionCenter"
+
+import ContextMenu from "components/ContextMenu"
+import ThemeProvider from "styles/ThemeProvider"
+import WindowManager from "components/Window/WindowManager"
+import SystemWrapper from "components/SystemWrapper"
+import Desktop from "components/Desktop"
+import Taskbar from "components/Taskbar"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ThemeProvider>
+      <SystemWrapper>
+        <ContextMenu />
+        <WindowManager />
+
+        <Desktop />
+        <Taskbar />
+
+        <ActionCenter />
+        <Dock />
+      </SystemWrapper>
+    </ThemeProvider>
+  )
 }
 
-export default App;
+export default App
