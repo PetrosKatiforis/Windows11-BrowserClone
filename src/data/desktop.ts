@@ -9,7 +9,7 @@ export const desktopData: IShortcut[] = [
   {
     icon: "bin.png",
     name: "Recycle Bin",
-    app_id: "bin"
+    app_id: "about"
   },
   {
     icon: "help.png",
