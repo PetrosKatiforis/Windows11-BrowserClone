@@ -2,7 +2,7 @@
 A small and incomplete clone of the latest version of Window.
 The project was created using React's typescript template, zustand for state management and styled-components for styling and theming the application
 <br />
-![Play around with the Live Preview](https://windows11-browser-clone.netlify.app/)
+[Play around with the Live Preview](https://windows11-browser-clone.netlify.app/)
 
 ## Screenshots
 
